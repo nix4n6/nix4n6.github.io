@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Byte &amp; Bone — field notes from the terminal and the trauma bay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand"><span class="dot"></span>Byte &amp; Bone</div>
+    <div class="nav-links">
+      <a href="#forensics">Forensics</a>
+      <a href="#ctf">CTF Logs</a>
+      <a href="#clinical">Clinical</a>
+      <a href="#code">Python</a>
+      <a href="#archive">Archive</a>
+    </div>
+    <a href="#subscribe" class="nav-cta">Subscribe</a>
+  </nav>
+</header>
+
+<svg class="signal-line" viewBox="0 0 1180 34" preserveAspectRatio="none">
+  <path d="M0,17 L120,17 L134,4 L148,30 L162,17 L300,17 L314,17 L322,26 L336,8 L344,17 L480,17 L620,17 L634,4 L648,30 L662,17 L800,17 L940,17 L954,26 L968,8 L976,17 L1180,17"/>
+</svg>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Case file open · updated weekly</div>
+        <h1 class="display">Where the <em>terminal</em><br>meets the <em>trauma bay</em>.</h1>
+        <p class="sub">Write-ups, root causes, and lab notes from two very different kinds of examination table — memory dumps and med-surg rounds, HTB boxes and cadaver labs.</p>
+        <div class="hero-actions">
+          <a href="#archive" class="btn-primary">Read the latest case →</a>
+          <a href="#ctf" class="btn-ghost">Browse CTF write-ups</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="num">214</div><div class="lbl">Posts filed</div></div>
+          <div class="stat"><div class="num">38</div><div class="lbl">HTB boxes rooted</div></div>
+          <div class="stat"><div class="num">8</div><div class="lbl">Subjects covered</div></div>
+        </div>
+      </div>
+
+      <div class="readout">
+        <div class="readout-top">
+          <div class="readout-head"><span>memory.dmp — offset 0x0400</span><span class="live">live</span></div>
+          <div class="hexdump"><span class="off">0x0400</span>  49 45 4e 44 ae 42 60 82  <span class="hi">4c 43</span> 41 4d 56
+<span class="off">0x0410</span>  53 48 41 32 35 36 3a 20  <span class="hi">6d</span> 61 74 63 68
+<span class="off">0x0420</span>  70 72 6f 63 65 73 73 2e  65 78 65 20 2d 2d</span></div>
+        </div>
+        <div class="readout-bottom">
+          <div class="readout-head"><span>patient monitor — bed 4</span><span style="color:var(--signal)">stable</span></div>
+          <svg class="vitals-line" viewBox="0 0 400 56" preserveAspectRatio="none">
+            <path d="M0,28 L60,28 L72,6 L84,50 L96,28 L180,28 L192,28 L200,40 L212,14 L220,28 L400,28"/>
+          </svg>
+          <div class="cap"><span>HR 72 bpm</span><span>SpO₂ 98%</span><span>RR 16</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="categories">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="tag">Subjects on file</span>
+          <h2>Eight disciplines, one notebook.</h2>
+        </div>
+        <p>Every post gets filed under a discipline — the way a lab specimen or a case gets logged before anyone opens it.</p>
+      </div>
+      <div class="cats">
+        <div class="cat-card">
+          <span class="glyph">◇</span>
+          <div class="cat-id">SPEC-01</div>
+          <h3>Digital Forensics</h3>
+          <p>Disk images, memory analysis, timeline reconstruction.</p>
+        </div>
+        <div class="cat-card">
+          <span class="glyph">◇</span>
+          <div class="cat-id">SPEC-02</div>
+          <h3>CTF Write-ups</h3>
+          <p>Full solves, dead ends included, from crypto to pwn.</p>
+        </div>
+        <div class="cat-card">
+          <span class="glyph">◇</span>
+          <div class="cat-id">SPEC-03</div>
+          <h3>HackTheBox</h3>
+          <p>Box walkthroughs, enumeration notes, privesc paths.</p>
+        </div>
+        <div class="cat-card">
+          <span class="glyph">◇</span>
+          <div class="cat-id">SPEC-04</div>
+          <h3>Reverse Engineering</h3>
+          <p>Disassembly, unpacking, and reading binaries closely.</p>
+        </div>
+        <div class="cat-card">
+          <span class="glyph">◇</span>
+          <div class="cat-id">SPEC-05</div>
+          <h3>Chemistry</h3>
+          <p>Reaction mechanisms, lab technique, stoichiometry that sticks.</p>
+        </div>
+        <div class="cat-card">
+          <span class="glyph">◇</span>
+          <div class="cat-id">SPEC-06</div>
+          <h3>Nursing</h3>
+          <p>Clinical reasoning, med-surg notes, NCLEX-style review.</p>
+        </div>
+        <div class="cat-card">
+          <span class="glyph">◇</span>
+          <div class="cat-id">SPEC-07</div>
+          <h3>Anatomy &amp; Physiology</h3>
+          <p>Systems explained the way you'll actually remember them.</p>
+        </div>
+        <div class="cat-card">
+          <span class="glyph">◇</span>
+          <div class="cat-id">SPEC-08</div>
+          <h3>Python Programming</h3>
+          <p>Scripts for automating both the lab bench and the shell.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="archive">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="tag">Recent case files</span>
+          <h2>Latest from the notebook.</h2>
+        </div>
+        <p>New write-ups and study notes, filed as they're finished.</p>
+      </div>
+      <div class="posts">
+
+        <div class="post-card">
+          <div class="post-thumb"><span class="case-id">CASE-0231</span><span class="icon">🧬</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="chip forensics">Reverse Eng.</span></div>
+            <h3>Unpacking a UPX binary by hand, no tools allowed</h3>
+            <p>Walking through manual unpacking in x64dbg when the automated tools all bail — reading the OEP by eye.</p>
+            <div class="post-foot"><span>12 min read</span><a class="read" href="#">Open case</a></div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-thumb"><span class="case-id">CASE-0230</span><span class="icon">🩺</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="chip clinical">Nursing</span></div>
+            <h3>Reading a chem-7 panel like it's a log file</h3>
+            <p>Sodium, potassium, BUN, creatinine — a mental model for scanning labs fast during report.</p>
+            <div class="post-foot"><span>8 min read</span><a class="read" href="#">Open case</a></div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-thumb"><span class="case-id">CASE-0229</span><span class="icon">📦</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="chip forensics">HackTheBox</span></div>
+            <h3>Rooting "Scriptor": SSRF to full RCE</h3>
+            <p>Chaining an internal API SSRF with a misconfigured cron job for root on a medium box.</p>
+            <div class="post-foot"><span>15 min read</span><a class="read" href="#">Open case</a></div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-thumb"><span class="case-id">CASE-0228</span><span class="icon">🧪</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="chip clinical">Chemistry</span></div>
+            <h3>Buffer solutions, explained with an IV drip analogy</h3>
+            <p>Why a buffer resists pH change — and why it maps almost exactly onto fluid balance.</p>
+            <div class="post-foot"><span>7 min read</span><a class="read" href="#">Open case</a></div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-thumb"><span class="case-id">CASE-0227</span><span class="icon">🔎</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="chip forensics">Digital Forensics</span></div>
+            <h3>Recovering deleted Slack history from a memory image</h3>
+            <p>Carving live chat fragments out of a Volatility memory dump after the app was closed.</p>
+            <div class="post-foot"><span>11 min read</span><a class="read" href="#">Open case</a></div>
+          </div>
+        </div>
+
+        <div class="post-card">
+          <div class="post-thumb"><span class="case-id">CASE-0226</span><span class="icon">🐍</span></div>
+          <div class="post-body">
+            <div class="post-meta"><span class="chip forensics">Python</span></div>
+            <h3>A 40-line Python script to triage pcap files</h3>
+            <p>Scapy plus a bit of pandas — flagging suspicious flows before you open Wireshark at all.</p>
+            <div class="post-foot"><span>9 min read</span><a class="read" href="#">Open case</a></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="subscribe">
+    <div class="wrap">
+      <div class="subscribe">
+        <div class="subscribe-copy">
+          <span class="tag">Weekly dispatch</span>
+          <h2>One email, every Sunday.</h2>
+          <p>New write-ups, study notes, and whatever box or case file got solved that week — no fluff, just the notes.</p>
+        </div>
+        <form class="subscribe-form" onsubmit="return false;">
+          <input type="email" placeholder="you@domain.com" required>
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <div class="brand"><span class="dot"></span>Byte &amp; Bone</div>
+      <p>A notebook kept by someone splitting their time between disassemblers and clinicals. Filed in public.</p>
+    </div>
+    <div class="foot-cols">
+      <div class="foot-col">
+        <h4>Technical</h4>
+        <a href="#forensics">Digital Forensics</a>
+        <a href="#ctf">CTF Write-ups</a>
+        <a href="#">HackTheBox</a>
+        <a href="#">Reverse Engineering</a>
+        <a href="#code">Python</a>
+      </div>
+      <div class="foot-col">
+        <h4>Clinical</h4>
+        <a href="#clinical">Nursing</a>
+        <a href="#">Anatomy &amp; Physiology</a>
+        <a href="#">Chemistry</a>
+      </div>
+      <div class="foot-col">
+        <h4>Site</h4>
+        <a href="#archive">Archive</a>
+        <a href="#subscribe">Subscribe</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Byte &amp; Bone. All findings are the author's own.</span>
+    <span>Filed from a terminal, not a template.</span>
+  </div>
+</footer>
+
+</body>
+</html>
